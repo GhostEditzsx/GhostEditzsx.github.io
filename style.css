@@ -59,7 +59,8 @@ nav img{
     border-radius: 9px;
     filter: grayscale(100%);
     transition: transform 0.4s ease, filter 0.6s ease;
-    padding: 15px 0px;
+    margin: 15px 0px;
+    display: block;
 }
 
 .card-img:hover{
