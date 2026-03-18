@@ -84,7 +84,13 @@ nav img{
     border: 1px solid black;
     padding: 5px;
     border-radius: 5px;
-    background-color: pink;
+    background: linear-gradient(180deg, #f4a1f7, #9e52f3);
+    transition: all 0.4s ease;
+}
+
+.card-list-item:hover{
+    color: white;
+    background: black;
 }
 
 .cards-container{
