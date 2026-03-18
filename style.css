@@ -80,6 +80,13 @@ nav img{
     flex-direction: column;
 }
 
+.project-card-title{
+    font-size: 24px;
+    color: #222;
+    font-weight: bold;
+    text-align: center; 
+}
+
 .card-img{
     width: 100%;
     border-radius: 9px;
@@ -98,6 +105,12 @@ nav img{
         transform: scale(1);
 }
 
+.project-card-text{
+    font-size: 18px;
+    color: #222;
+    font-family: bold;
+    text-align: center;
+}
 .card-list{
     list-style: none;
     display: flex;
@@ -121,14 +134,43 @@ nav img{
 
 .cards-container{
     display: flex;
+    flex-wrap: nowrap;
     gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.see-more{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 0;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.see-more-box{
+    width: 400px;
+    height: 100px;
+    background: linear-gradient(135deg, pink, #E630C1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.see-more-box:hover{
+    transform: scale(1.1);
 }
 
 .AboutMe{
     width: 1000px;
     height: 1000px;
     background: linear-gradient(135deg, pink, #E630C1);
-    margin-top: 250px;
+    margin-top: 135px;
     margin-left: 20px;
 }
 
