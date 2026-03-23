@@ -4,9 +4,19 @@
             
         }
 
+        html, body {
+            height: 100%;
+        }
+
         body {
             background-color: #3064E6;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
         }
 
         /* NAVBAR */
@@ -91,7 +101,7 @@
             width: 100%;
             border-radius: 10px;
             filter: grayscale(100%);
-            transition: 0.4s;
+            transition: 0.35s;
         }
 
         .card-img:hover {
@@ -125,4 +135,11 @@
         .card-list-item:hover {
             color: white;
             background: black;
+            cursor: default;
+        }
+
+        .AboutMe {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
         }

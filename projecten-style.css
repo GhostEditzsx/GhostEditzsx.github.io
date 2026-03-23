@@ -1,0 +1,139 @@
+* {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #3064E6;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #E630C1;
+            padding: 10px;
+        }
+
+        nav img {
+            width: 40px;
+            height: 40px;
+            margin-right: auto;
+        }
+
+        .list {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        /* BUTTONS (NAV + FOOTER) */
+        .list a,
+        .footer-list a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #CC88EB;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s ease;
+        }
+
+        .list a:hover,
+        .footer-list a:hover {
+            transform: scale(1.2);
+            background-color: #b46be0;
+        }
+
+        /* FOOTER */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #E630C1;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        .footer-list {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        /* CARDS (unchanged but cleaner) */
+        .cards-container {
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+        }
+
+        .project-card {
+            width: 300px;
+            height: 600px;
+            background: linear-gradient(135deg, pink, #E630C1);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card-title {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: 10px;
+            filter: grayscale(100%);
+            transition: 0.35s;
+        }
+
+        .card-img:hover {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+
+        .project-card-text {
+            font-size: 17px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .card-list {
+            list-style: none;
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .card-list-item {
+            background: linear-gradient(180deg, #f4a1f7, #9e52f3);
+            padding: 7px;
+            border-radius: 5px;
+            border: 1.8px solid black;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .card-list-item:hover {
+            color: white;
+            background: black;
+            cursor: default;
+        }
