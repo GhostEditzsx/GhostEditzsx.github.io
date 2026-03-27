@@ -19,7 +19,7 @@
             flex: 1;
         }
 
-        /* NAVBAR */
+        
         nav {
             display: flex;
             justify-content: flex-end;
@@ -40,7 +40,7 @@
             gap: 20px;
         }
 
-        /* BUTTONS (NAV + FOOTER) */
+        
         .list a,
         .footer-list a {
             display: block;
@@ -58,7 +58,7 @@
             background-color: #b46be0;
         }
 
-        /* FOOTER */
+        
         .footer {
             display: flex;
             justify-content: center;
@@ -74,7 +74,7 @@
             gap: 20px;
         }
 
-        /* CARDS (unchanged but cleaner) */
+        
         .cards-container {
             display: flex;
             gap: 50px;
