@@ -93,7 +93,13 @@
         }
 
         .modal-trigger {
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            transition: box-shadow 0.3s ease;
             cursor: pointer;
+        }
+
+        .modal-trigger:hover {
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.30);
         }
 
         .project-card-title {

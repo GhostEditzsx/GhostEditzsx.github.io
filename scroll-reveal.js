@@ -77,6 +77,7 @@ function removeModal() {
     }
 
     const finishClose = () => {
+        resetModalScroll(modal);
         modal.style.display = "none";
         modal.classList.remove("is-open", "is-closing");
         modal.setAttribute("aria-hidden", "true");
@@ -117,7 +118,20 @@ function showModal() {
 
     modal.style.display = "flex";
     modal.classList.remove("is-closing");
+    resetModalScroll(modal);
+    requestAnimationFrame(() => resetModalScroll(modal));
     void modal.offsetWidth;
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
+}
+
+function resetModalScroll(modal) {
+    modal.scrollTop = 0;
+    modal.scrollLeft = 0;
+
+    const modalContent = modal.querySelector(".modal-content");
+    if (modalContent) {
+        modalContent.scrollTop = 0;
+        modalContent.scrollLeft = 0;
+    }
 }
