@@ -246,7 +246,17 @@
         }
 
         .modal-content p {
-            line-height: 1.6;
+            line-height: 1.35;
+        }
+
+        .modal-doc-link {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .modal-doc-link a {
+            color: inherit;
+            text-decoration: underline;
         }
 
         .close-button {

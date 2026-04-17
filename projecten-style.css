@@ -79,12 +79,13 @@
             display: flex;
             gap: 50px;
             padding: 20px;
+            margin-top: 15px;
             flex-wrap: wrap;
             justify-content: center;
         }
 
         .project-card {
-            width: 500px;
+            width: 460px;
             height: auto;
             background: linear-gradient(135deg, pink, #E630C1);
             padding: 20px;
@@ -227,7 +228,17 @@
         }
 
         .modal-content p {
-            line-height: 1.6;
+            line-height: 1.35;
+        }
+
+        .modal-doc-link {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .modal-doc-link a {
+            color: inherit;
+            text-decoration: underline;
         }
 
         .close-button {
